@@ -90,12 +90,22 @@ $(function() {
     },
     $element: $('#board .column-container')
   };
-
+  /*
+   * Function implements jQueryUIs drag'n'drop and sortable functionality
+   */
   function initSortable() {
     $('.column-card-list').sortable({
       connectWith: '.column-card-list',
       placeholder: 'card-placeholder'
     }).disableSelection();
   }
+
+  // Attach event handler to .create-column button
+  $('.create-column')
+    .click(function() {
+      var name = prompt('Enter a column name');
+      var column = new Column(name);
+      board.addColumn(column);
+    });
 
 })
