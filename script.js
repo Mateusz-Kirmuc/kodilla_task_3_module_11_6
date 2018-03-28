@@ -68,6 +68,11 @@ $(function() {
       $cardDelete.click(function() {
         self.removeCard();
       });
+
+      // Build tree from nodes
+      $card.append($cardDelete).append($cardDescription);
+
+      return $card;
     }
 
   }
