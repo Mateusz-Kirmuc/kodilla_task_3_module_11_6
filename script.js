@@ -10,4 +10,16 @@ $(function() {
     }
     return str;
   }
+
+  function Column(name) {
+    var self = this; // useful for nested functions
+    this.id = randomString();
+    this.name = name;
+    this.$element = createColumn();
+
+    function createColumn() {
+      // here is the code for creating the column, which you will find
+      // below
+    }
+  }
 })
