@@ -32,6 +32,14 @@ $(function() {
       $columnAddCard.click(function() {
         // self.addCard(new Card(prompt("Enter the name of the card")));
       });
+
+      // Compose final column from elements 
+      $column.append($columnTitle)
+        .append($columnDelete)
+        .append($columnAddCard)
+        .append($columnCardList);
+
+      return $column;
     }
   }
 
