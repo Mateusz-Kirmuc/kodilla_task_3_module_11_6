@@ -52,4 +52,15 @@ $(function() {
     }
   };
 
+  function Card(description) {
+    var self = this;
+    this.id = randomString();
+    this.description = description;
+    this.$element = createCard();
+
+    function createCard() {
+      // Implementation of card creation
+    }
+  }
+
 })
