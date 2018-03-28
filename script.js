@@ -59,7 +59,10 @@ $(function() {
     this.$element = createCard();
 
     function createCard() {
-      // Implementation of card creation
+      // Create DOM elements
+      var $card = $('<li>').addClass('card');
+      var $cardDescription = $('<p>').addClass('carddescription').text(self.description);
+      var $cardDelete = $('<button>').addClass('btn-delete').text('x');
     }
   }
 
