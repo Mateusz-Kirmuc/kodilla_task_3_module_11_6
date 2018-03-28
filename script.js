@@ -63,7 +63,13 @@ $(function() {
       var $card = $('<li>').addClass('card');
       var $cardDescription = $('<p>').addClass('carddescription').text(self.description);
       var $cardDelete = $('<button>').addClass('btn-delete').text('x');
+
+      // Attach event handler
+      $cardDelete.click(function() {
+        self.removeCard();
+      });
     }
+
   }
 
 })
