@@ -27,10 +27,10 @@ $(function() {
 
       // Attach event handlers
       $columnDelete.click(function() {
-        // self.removeColumn();
+        self.removeColumn();
       });
       $columnAddCard.click(function() {
-        // self.addCard(new Card(prompt("Enter the name of the card")));
+        self.addCard(new Card(prompt("Enter the name of the card")));
       });
 
       // Compose final column from elements
